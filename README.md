@@ -39,14 +39,17 @@ ELSE
 END IF
 
 
-##  Flowchart
+
+## 📊 Flowchart
 
 ```mermaid
-graph TD
-    A[Start] --> B[Input Bilangan]
+flowchart TD
+    A([START]) --> B[/Input bilangan/]
     B --> C{Bilangan % 2 == 0?}
-    C -- Ya --> D[Bilangan Genap]
-    C -- Tidak --> E[Bilangan Ganjil]
-    D --> F[End]
+    
+    C -->|Ya| D[Output: Bilangan Genap]
+    C -->|Tidak| E[Output: Bilangan Ganjil]
+    
+    D --> F([END])
     E --> F
 ```
